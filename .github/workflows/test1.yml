@@ -103,4 +103,17 @@ jobs:
         name: FabPCB_Output
         path: Fabrication
 
+Diffs:
+    name: Generate Git Diffs
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
 
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 
+        
+    - name: Run Diffs
+      run: |
+        # Explicitly running the 'diffs' output target defined in your kibot config
+        kibot -d Fabrication -s all diffs
