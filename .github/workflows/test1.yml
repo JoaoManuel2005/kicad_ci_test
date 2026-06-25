@@ -115,5 +115,10 @@ jobs:
           
       - name: Run Diffs
         run: |
-          # Explicitly running the 'diffs' output target defined in your kibot config
           kibot -d Fabrication -s all diffs
+
+      - name: Retrieve results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Diffs_Output
+          path: Fabrication

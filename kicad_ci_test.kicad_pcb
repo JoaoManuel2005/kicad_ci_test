@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,33 +9,34 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0.051)
 		(solder_mask_min_width 0.25)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes no)
@@ -45,7 +46,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -53,16 +53,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -103,19 +106,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c0f76f86-1c91-4246-8f3c-7ad8a49cfd2d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -141,7 +132,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005e9b690b")
-		(sheetname "Raíz")
+		(sheetname "/")
 		(sheetfile "kicad_ci_test.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -315,6 +306,7 @@
 			(pintype "passive")
 			(uuid "260d4815-56c2-42f5-aa77-83a41a41f621")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -355,19 +347,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "69230cc1-3015-411e-bd25-7487e2b8d1d3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -393,7 +373,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5af93aaa-f591-4f42-82d3-ed917d48fd32")
-		(sheetname "Raíz")
+		(sheetname "/")
 		(sheetfile "kicad_ci_test.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -720,6 +700,7 @@
 			(pintype "passive")
 			(uuid "494c70d0-1b23-480c-9890-1d7ac7cd65cb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -749,7 +730,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "200"
 			(at 5.08 2.37 0)
 			(layer "F.Fab")
 			(uuid "2109b28b-1638-4913-8b7c-8f6df95dd38c")
@@ -760,19 +741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1cbcd67-55de-4cfd-bea0-095d77b857e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -811,7 +780,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005e9b5fc2")
-		(sheetname "Raíz")
+		(sheetname "/")
 		(sheetfile "kicad_ci_test.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1005,6 +974,7 @@
 			(pintype "passive")
 			(uuid "80d9ae33-0122-4ed3-9e2c-8fb51747347c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1045,20 +1015,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2872f0be-d421-4b16-a7c9-2f3108861fcb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9565d3ee-b5a9-4492-abed-889de9ca8b7c")
@@ -1070,7 +1028,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "53427a40-045c-41e3-a2d1-4a9175dab7c9")
@@ -1083,7 +1041,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/bbac5af4-6e46-4cad-9dd9-6cd238f9fd8f")
-		(sheetname "Raíz")
+		(sheetname "/")
 		(sheetfile "kicad_ci_test.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1410,6 +1368,7 @@
 			(pintype "passive")
 			(uuid "ccb42fe3-aa21-46c1-bc78-27b42feb7fdd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1423,6 +1382,16 @@
 		)
 	)
 	(gr_line
+		(start 167.64 78.74)
+		(end 195.58 78.74)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f443ae2e-a586-45d6-835f-0054fad6344a")
+	)
+	(gr_line
 		(start 167.64 91.44)
 		(end 167.64 78.74)
 		(stroke
@@ -1431,16 +1400,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "00000000-0000-0000-0000-00005e9b6edb")
-	)
-	(gr_line
-		(start 195.58 91.44)
-		(end 167.64 91.44)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "3597efea-142c-463a-8ba7-d33d5750d5b8")
 	)
 	(gr_line
 		(start 195.58 78.74)
@@ -1453,17 +1412,17 @@
 		(uuid "75b08937-5d1f-4578-9094-6a221191db9e")
 	)
 	(gr_line
-		(start 167.64 78.74)
-		(end 195.58 78.74)
+		(start 195.58 91.44)
+		(end 167.64 91.44)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "f443ae2e-a586-45d6-835f-0054fad6344a")
+		(uuid "3597efea-142c-463a-8ba7-d33d5750d5b8")
 	)
 	(gr_text "Hello"
-		(at 188.7728 80.3656 0)
+		(at 191 80.5 0)
 		(layer "B.Cu")
 		(uuid "a572e296-bee3-4a80-8df6-ee1f69442b62")
 		(effects
@@ -1617,4 +1576,5 @@
 		(net 3)
 		(uuid "f53bb448-12e3-4cf9-b115-35eb358b6fac")
 	)
+	(embedded_fonts no)
 )
