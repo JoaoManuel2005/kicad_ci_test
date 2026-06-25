@@ -80,3 +80,6 @@ outputs:
         - Footprint
         - Quantity Per PCB
 
+  - name: 'diffs'
+    type: diff
+    run_by_default: true
