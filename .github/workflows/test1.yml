@@ -1,5 +1,7 @@
 name: Simple KiBot CI/CD test
 
+#test1
+
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 # If any of the listed file changes we run the workflow
